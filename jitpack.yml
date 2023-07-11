@@ -1,4 +1,6 @@
 jdk:
   - oraclejdk11
+before_install:
+  - chmod +x gradlew
 install:
   - ./gradlew zparc:publishToMavenLocal
