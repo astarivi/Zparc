@@ -1,0 +1,4 @@
+jdk:
+  - oraclejdk11
+install:
+  - ./gradlew zparc:publishToMavenLocal

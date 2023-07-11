@@ -34,10 +34,13 @@ dependencies {
     implementation libs.appcompat
 }
 
-
 publishing {
     publications {
-        main(MavenPublication) {
+        release(MavenPublication) {
+            groupId = 'com.github.astarivi'
+            artifactId = 'zparc'
+            version = '1.0'
+
             afterEvaluate {
                 from components.release
             }
