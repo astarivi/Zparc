@@ -46,6 +46,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.astarivi.zparc:zsparc:1.0'
+    implementation 'com.astarivi.zparc:zparc:1.0'
 }
 ```
