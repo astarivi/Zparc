@@ -35,17 +35,18 @@ public class YourActivity extends AppCompatActivity {
 
 ## Installation
 
-### Github Packages as Source
+### From Jitpack
 
 ```groovy
 repositories {
     ...
     maven {
-        url = uri("https://maven.pkg.github.com/astarivi/Zparc")
+        url 'https://jitpack.io'
     }
 }
 
 dependencies {
-    implementation 'com.astarivi.zparc:zparc:1.0'
+    ...
+    implementation 'com.github.astarivi:Zparc:d0b7473283'
 }
 ```
