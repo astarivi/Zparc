@@ -49,6 +49,9 @@ afterEvaluate {
         publications {
             gpr(MavenPublication) {
                 from components.release
+
+                groupId 'com.astarivi.zparc'
+                version '1.0'
             }
         }
     }
