@@ -37,3 +37,5 @@ dependencies {
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core
 }
+
+tasks.withType(PublishToMavenRepository).configureEach { it.enabled = false }
