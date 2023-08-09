@@ -44,6 +44,15 @@ publishing {
             afterEvaluate {
                 from components.release
             }
+
+            pom {
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'https://github.com/astarivi/Zparc/blob/361e244dc1438418274ee47229bdb3ef1aec4466/LICENSE'
+                    }
+                }
+            }
         }
     }
 }
