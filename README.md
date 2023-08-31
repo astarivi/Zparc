@@ -1,11 +1,19 @@
 <h1 align="center">Zparc</h1>
 <p align="center">
-    <a href="https://github.com/astarivi/Zparc/packages"><img src="https://img.shields.io/badge/download-363d80?logo=android&logoColor=white&style=for-the-badge" alt="Download badge"></a>
+    <a href="https://jitpack.io/#astarivi/Zparc"><img src="https://img.shields.io/badge/download-363d80?logo=android&logoColor=white&style=for-the-badge" alt="Download badge"></a>
 </p>
 
 An Android library to create gradient animations, fork of TonnyL [Spark](https://github.com/TonnyL/Spark).
 Zparc aims to deliver extra functionality sparkled on top of the original library, while porting it
 to Java.
+
+# Preview
+
+<p align="justify">
+    <img src="./media/1.gif" width="32%" />
+    <img src="./media/2.gif" width="32%" />
+    <img src="./media/3.gif" width="32%" />
+</p>
 
 ## Basic Usage
 
@@ -22,6 +30,13 @@ public class YourActivity extends AppCompatActivity {
                 .setView(view)
                 .setAnimColors(Zparc.ANIM_GREEN_PURPLE)
                 .build();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        zparc.startAnimation();
     }
 
     @Override
@@ -47,6 +62,8 @@ repositories {
 
 dependencies {
     ...
-    implementation 'com.github.astarivi:Zparc:d0b7473283'
+    implementation 'com.github.astarivi:Zparc:1.1'
 }
 ```
+
+
