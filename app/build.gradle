@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.astarivi.zparcexample'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.astarivi.zparcexample"
         minSdk 19
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 

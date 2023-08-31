@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.astarivi.zparc'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 19
@@ -39,7 +39,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.astarivi'
             artifactId = 'zparc'
-            version = '1.0'
+            version = '1.1'
 
             afterEvaluate {
                 from components.release
